@@ -206,6 +206,8 @@ def services():
     st.title("AI Cotton Disease Classification Assistant 🍃")
     st.subheader("An app to help with chest diease analysis using images and text")
 
+    os.environ["GOOGLE_API_KEY"] == st.secrets["GOOGLE_API_KEY"]
+
     tab1, tab2 = st.tabs(["Image Analysis", "Text Query"])
 
     with tab1:
